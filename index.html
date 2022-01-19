@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form Project</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class=container>
+            <header id="header">
+                <h1 id="title">Want to join the team?</h1>
+                <p id="description">Fill out the form to apply.</p>
+            </header>
+            
+            <form id="survey-form">   
+                <div id="name-div">
+                    <label id="name-label">Name</label>
+                    <input id="name-input" type="text" placeholder=" Enter name here" required></input>
+                </div>
+
+                <div id="email-div">
+                    <label id="email-label">Email</label>
+                    <input id="email-input" type="email" placeholder=" Enter email here" required></input>
+                </div>
+
+                <div id="address-div">
+                    <label id="address-label">Address</label>
+                    <input id="address-input" type="text" placeholder=" Enter address here"></input>
+                </div>
+
+                <div id="dropdown-div">
+                    <label id="dropdown-label">Which role would you like to apply for?</label>
+                    <select id="dropdown" required>
+                        <option disabled selected>Select your role</option>
+                        <option value="data-scientist">Data Scientist</option>
+                        <option value="software-developer">Software Developer</option>
+                        <option value="information-security-analyst">Information Security Analyst</option>
+                        <option value="computer-systems-analyst">Computer Systems Analyst</option>
+                        <option value="sales-engineer">Sales Engineer</option>
+                        <option value="information-technology-manager">Information Technology Manager</option>
+                        <option value="network-and-systems-administrator">Network and Systems Administrator</option>
+                    </select>
+                </div>
+
+                <div id="experience-div">
+                        <label id="experience-label">Experience (1-10)</label>
+                        <input id="number" type="number" min="1" max="10" placeholder=" Rate your experience here" required></input> <!-- For shipped webpage, this would be called id="experience-input"-->
+                    </div>
+
+                <div id="about-div">
+                    <label id="about-label">Why should we consider you?</label>
+                    <textarea id="about" maxlength="2500" placeholder=" Tell us about yourself and why you're interested in joining our team!"></textarea>
+                </div>
+
+                <section id="availability-section">
+                    <div id="checkbox-div">
+                        <div id="monday-div">
+                            <input type="checkbox"> Monday
+                        </div>
+
+                        <div id="tuesday-div">
+                            <input type="checkbox"> Tuesday
+                        </div>
+
+                        <div id="wednesday-div">
+                            <input type="checkbox"> Wednesday
+                        </div>
+                            
+                        <div id="thursday-div">
+                            <input type="checkbox"> Thursday
+                        </div>
+                        
+                        <div id="friday-div">
+                            <input type="checkbox"> Friday
+                        </div>
+
+                        <div id="saturday-div">
+                            <input type="checkbox"> Saturday
+                        </div>
+
+                        <div id="sunday-div">
+                            <input type="checkbox"> Sunday
+                        </div>
+                    </div>
+
+                    <div id="radio-and-dropdown-div">
+                        <div id="from-div">
+                            <select id="from-select">
+                                <option disabled selected>Select start time availability</option>
+                                <option>1:00</option>
+                                <option>1:30</option>
+                                <option>2:00</option>
+                                <option>2:30</option>
+                                <option>3:00</option>
+                                <option>3:30</option>
+                                <option>4:00</option>
+                                <option>4:30</option>
+                                <option>5:00</option>
+                                <option>5:30</option>
+                                <option>6:00</option>
+                                <option>6:30</option>
+                                <option>7:00</option>
+                                <option>7:30</option>
+                                <option>8:00</option>
+                                <option>8:30</option>
+                                <option>9:00</option>
+                                <option>9:30</option>
+                                <option>10:00</option>
+                                <option>10:30</option>
+                                <option>11:00</option>
+                                <option>11:30</option>
+                                <option>12:00</option>
+                                <option>12:30</option>
+                            </select>  
+        
+                            <div id="from-radio-div" class="am-pm">
+                                <div id="from-am-div">
+                                    <input value="am" name="from-radio" type="radio" checked> A.M.
+                                </div>
+        
+                                <div id="from-pm-div">
+                                    <input value="pm" name="from-radio" type="radio"> P.M.
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div id="until-div">
+                            <select id="until-label">
+                                <option disabled selected>Select end time availability</option>
+                                <option>1:00</option>
+                                <option>1:30</option>
+                                <option>2:00</option>
+                                <option>2:30</option>
+                                <option>3:00</option>
+                                <option>3:30</option>
+                                <option>4:00</option>
+                                <option>4:30</option>
+                                <option>5:00</option>
+                                <option>5:30</option>
+                                <option>6:00</option>
+                                <option>6:30</option>
+                                <option>7:00</option>
+                                <option>7:30</option>
+                                <option>8:00</option>
+                                <option>8:30</option>
+                                <option>9:00</option>
+                                <option>9:30</option>
+                                <option>10:00</option>
+                                <option>10:30</option>
+                                <option>11:00</option>
+                                <option>11:30</option>
+                                <option>12:00</option>
+                                <option>12:30</option>
+                            </select>
+        
+                            <div id="until-radio-div" class="am-pm">
+                                <div id="until-am-div">
+                                    <input value="am" name="until-radio" type="radio" checked> A.M.
+                                </div>
+        
+                                <div id="until-pm-div">
+                                    <input value="pm" name="until-radio" type="radio"> P.M.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <button id="button">
+                    submit
+                </button>    
+            </form>
+
+            <footer id="footer">
+                <p id="footer-note">made by Brian Schnee for <a class="link" href="https://freeCodeCamp.org">freeCodeCamp.org</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>
