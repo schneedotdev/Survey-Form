@@ -83,11 +83,11 @@ input:focus, select:focus, textarea:focus, button:focus, a:focus {
     outline-color: blue;
 }
 
-#name-label, #email-label, #address-label, #about-label, #experience-label, #dropdown-label {
+#name-label, #email-label, #address-label, #about-label, #number-label, #dropdown-label {
     color: black;
 }
 
-#name-input, #email-input, #address-input, #number {
+#name, #email, #address-input, #number {
     width: 500px;
     height: 30px;
     border: 2px solid rgba(198, 202, 219, 1);
@@ -95,7 +95,6 @@ input:focus, select:focus, textarea:focus, button:focus, a:focus {
 }
 
 #name-input::placeholder, #email-input::placeholder, #address-input::placeholder, #about::placeholder, #number::placeholder, select {
-    /* color: rgba(198, 202, 219, 1); */
     color: #37474F;
 }
 
