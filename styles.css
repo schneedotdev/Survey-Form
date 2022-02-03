@@ -8,6 +8,8 @@ body, .container {
     letter-spacing: 0.025rem;
 }
 
+/* replace id's with classes to minimize the specificity of each elements styles */
+
 #title, #description {
     margin: 0;
 }
@@ -31,6 +33,7 @@ body, .container {
     margin: 10px auto;
     padding: 2.5rem;
 
+    /*  need to adjust min and max widths for responsiveness */ 
     max-width: 720px;
     border-radius: 0.5rem;
     /* margin: 3.125rem auto 0 auto; */
